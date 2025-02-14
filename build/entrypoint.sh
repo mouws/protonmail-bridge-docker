@@ -6,6 +6,7 @@ set -ex
 if [[ $1 == init ]]; then
 
     # Initialize pass
+    service rng-tools start
     gpg --generate-key --batch /protonmail/gpgparams
     pass init pass-key
     
