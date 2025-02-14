@@ -17,7 +17,7 @@ EXPOSE 143/tcp
 
 # Install dependencies and protonmail bridge
 RUN apt-get update \
-    && apt-get install rng-tools \
+    && apt-get install -y rng-tools \
     && apt-get install -y --no-install-recommends socat pass libsecret-1-0 ca-certificates \
     && rm -rf /var/lib/apt/lists/*
 
