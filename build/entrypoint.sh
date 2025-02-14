@@ -3,6 +3,7 @@
 set -ex
 
 # Initialize
+service rng-tools start
 if [[ $1 == init ]]; then
 
     # Initialize pass
